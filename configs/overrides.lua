@@ -28,11 +28,11 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua 
+    -- lua
     "lua-language-server",
     "stylua",
 
-    -- web dev 
+    -- web dev
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
@@ -49,7 +49,7 @@ M.mason = {
     "yamlfmt",
     "yamllint",
 
-    -- c/cpp 
+    -- c/cpp
     "clangd",
     "clang-format",
 
@@ -96,6 +96,13 @@ M.nvimtree = {
       },
     },
   },
+
+  update_focused_file = {
+    enable = true,
+    update_root = true,
+  },
+
+  respect_buf_cwd = true,
 }
 
 return M

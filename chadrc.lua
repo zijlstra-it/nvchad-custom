@@ -9,7 +9,7 @@ M.ui = {
   theme_toggle = { "tokyodark", "tokyonight" },
 
   statusline = {
-    theme = "vscode_colored"
+    theme = "vscode_colored",
   },
 
   hl_override = highlights.override,
