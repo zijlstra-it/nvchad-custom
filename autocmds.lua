@@ -39,7 +39,7 @@ autocmd("TermOpen", {
   callback = function()
     vim.opt_local.relativenumber = false
     vim.opt_local.number = false
-    vim.cmd "startinsert!"
+    vim.cmd("startinsert!")
   end,
   group = general,
   desc = "Terminal Options",
