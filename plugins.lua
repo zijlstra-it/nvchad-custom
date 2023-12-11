@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -38,15 +38,29 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
+  -- disable plugins
+  {
+    "NvChad/nvterm",
+    enabled = false,
+  },
+
   -- add plugins
 
   {
-    "hashivim/vim-terraform"
+    "hashivim/vim-terraform",
   },
 
-  "NvChad/nvcommunity",
-  { import = "nvcommunity.git.diffview" },
-
+  -- Terminal Integration
+  {
+    "akinsho/toggleterm.nvim",
+    cmd = {
+      "ToggleTerm",
+      "ToggleTermSendCurrentLine",
+      "ToggleTermSendVisualLines",
+      "ToggleTermSendVisualSelection",
+    },
+    opts = require "custom.configs.toggleterm",
+  },
 }
 
 return plugins

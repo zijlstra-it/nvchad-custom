@@ -1,2 +1,3 @@
-require("custom.options")
-require("custom.autocmds")
+require "custom.options"
+require "custom.functions"
+require "custom.autocmds"
