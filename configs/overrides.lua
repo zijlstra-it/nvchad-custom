@@ -2,6 +2,7 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
+    "bash",
     "c",
     "css",
     "dockerfile",
@@ -17,6 +18,7 @@ M.treesitter = {
     "rust",
     "sql",
     "terraform",
+    "toml",
     "typescript",
     "vim",
     "yaml",
