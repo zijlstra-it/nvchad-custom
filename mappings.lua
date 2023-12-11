@@ -23,7 +23,7 @@ M.user = {
     ["<leader>sx"] = { "<cmd>close<CR>", "Close current split" },
 
     -- Remap leader-n to "new file"
-    ["<leader>n"] = { "<cmd>enew<CR>", "Open new buffer" },
+    ["<leader>n"] = { "<cmd> enew <CR>", "Open new buffer" },
 
     -- ToggleTerm
     ["<leader>tf"] = { "<cmd>ToggleTerm direction=float<cr>", "Float Terminal", opts = { silent = true } },
