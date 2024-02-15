@@ -10,11 +10,17 @@ M.override = {
     italic = true,
     fg = "white",
   },
+  CursorLine = {
+    bg = "one_bg",
+  },
 }
 
 ---@type HLTable
 M.add = {
   NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  CursorLine = {
+    bg = "one_bg",
+  },
 }
 
 return M
