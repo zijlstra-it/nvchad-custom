@@ -12,6 +12,10 @@ M.ui = {
     theme = "vscode_colored",
   },
 
+  tabufline = {
+    lazyload = false,
+  },
+
   hl_override = highlights.override,
   hl_add = highlights.add,
 }
